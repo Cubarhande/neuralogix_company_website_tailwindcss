@@ -15,4 +15,4 @@ Easy customization and scalability
 #Demo
 
 A live demo will be available at:
-https://neuralogix.com
+[[https://neuralogix.com](https://neuralogix.ai/)](https://neuralogix.ai/)
