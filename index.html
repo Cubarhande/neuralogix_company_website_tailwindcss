@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuralogix</title>
+  <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body>
+
+
+  <!-- header --> 
+  <div class="bg-gray-900 bg-image text-gray-200">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav aria-label="Global" class="flex items-center mx-auto container justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5 flex text-2xl font-semibold">
+            <span class="sr-only">Your Company</span>
+            <img src="assets/img/logo.jpg" alt=""
+              class="h-8 w-auto me-2" />  Neuralogix 
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#" class="text-sm/6 font-semibold ">Solutions</a>
+          <a href="#" class="text-sm/6 font-semibold ">Industries</a>
+          <a href="#" class="text-sm/6 font-semibold ">Company</a>
+          <a href="#" class="text-sm/6 font-semibold ">Insights</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm/6 font-semibold  me-5">Careers 
+             
+            </a>
+          <a href="#" class="text-sm/6 font-semibold ">Contact <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5 flex text-2xl font-semibold">
+                  <span class="sr-only">Your Company</span>
+                  <img src="assets/img/logo.jpg" alt=""
+                    class="h-8 w-auto me-2" />  Neuralogix 
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                    aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50">Solutions</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50">Industries</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50">Company</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50">Insights</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold  hover:bg-gray-50">Careers
+                    </a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold  hover:bg-gray-50">Contact
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </header>
+
+    <div class="relative isolate px-6 pt-10 lg:px-8">
+      <div aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+          class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75">
+        </div>
+      </div>
+      <div class="mx-auto max-w-5xl py-16 sm:py-24 lg:py-28">
+       
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold tracking-tight text-balance  sm:text-7xl">Unlock the Full
+            Potential of AI for Your Business</h1>
+          <p class="mt-8 text-lg font-medium text-pretty  sm:text-xl/8">Automate complex processes,
+            generate new revenue streams and enhance customer experience
+            with our Enterprise AI</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="#"
+              class="inline-flex items-center text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary-soft shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Request
+              a demo <span aria-hidden="true"> → </span></a>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true"
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+        <div
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+          class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl md:text-4xl mb-4 font-medium text-gray-900">Neuralogix introduces Generative
+          <br class="hidden lg:inline-block">AI solutions for Enterprises
+        </h1>
+        <p class="mb-8 leading-relaxed">Discover how to move past the buzz and unlock genuine business benefits from
+          Generative AI.</p>
+         <div class="mt-5   ">
+
+          <a href="#"
+            class="inline-flex  text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary-soft shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Read
+            more <span aria-hidden="true"> → </span></a>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="assets/img/neuralogix-chat-v2.svg">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+
+      <div class="flex flex-wrap ">
+        <div class="p-4 md:w-1/2">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="  items-center mb-3">
+              <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full   flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Level-up your Customer Interactions</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Revolutionizing your marketing, sales, and customer support with
+                Generative AI powered chatbots that can tailor recommendations, optimize customer journeys, and even
+                provide real-time assistance.</p>
+              <a href="#" class="mt-3 text-indigo-500 inline-flex items-center">Read more
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2">
+          <div class="flex rounded-lg h-full bg-gray-500 text-gray-50 p-8 flex-col">
+            <div class="  items-center mb-3">
+              <div
+                class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full   text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h1 class="text-Gray-100 text-lg title-font font-medium">Total Enterprise Reinvention</h1>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Unleash the power of your internal proprietary data and insights with
+                our custom-tuned LLMs, automating tasks across functions and empowering your teams with intelligent
+                co-pilots for unparalleled efficiency and competitiveness.</p>
+              <a href="#" class="mt-3 text-Gray-500 inline-flex items-center">Read more
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font hidden">
+    <div class="container px-5 py-12 mx-auto">
+      <div class="flex flex-col  w-full mb-20">
+        <h1 class="text-5xl font-medium title-font mb-4 text-gray-900  ">Discover Use Cases For Your Industry</h1>
+        <p class="lg:w-2/3 text-4xl   leading-relaxed text-base">Neuralogix can help you solve your most pressing
+          challenges and make better business decisions.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-60 h-60 object-cover object-center sm:mb-0 mb-4"
+              src="assets/img/financial-service.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-2xl mb-4   text-gray-900">Financial Services</h2>
+
+              <p class="mb-4 font-medium ">Detect fraud earlier, mitigate risk, and drive customer loyalty.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-60 h-60 object-cover object-center sm:mb-0 mb-4"
+              src="assets/img/retail-service.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-2xl mb-4   text-gray-900">Retail</h2>
+
+              <p class="mb-4 font-medium ">Forecast demand, optimize staffing, and improve customer experiences.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-60 h-60 object-cover object-center sm:mb-0 mb-4"
+              src="assets/img/healthcare-service.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-2xl mb-4   text-gray-900">Healthcare</h2>
+
+              <p class="mb-4 font-medium ">Optimize patient care, accelerate research and forecast operational needs.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-60 h-60 object-cover object-center sm:mb-0 mb-4"
+              src="assets/img/manufacturing-service.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-2xl mb-4   text-gray-900">Manufacturing</h2>
+
+              <p class="mb-4 font-medium ">Optimize patient care, accelerate research and forecast operational needs.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Discover Use Cases For Your
+            Industry</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Neuralogix can help you solve your most pressing
+          challenges and make better business decisions.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/financial-service.png"
+              alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Financial Services</h2>
+            <p class="leading-relaxed text-base">Detect fraud earlier, mitigate risk, and drive customer loyalty.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/retail-service.png"
+              alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Retail</h2>
+            <p class="leading-relaxed text-base">Forecast demand, optimize staffing, and improve customer experiences.
+            </p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/healthcare-service.png"
+              alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Healthcare</h2>
+            <p class="leading-relaxed text-base">Optimize patient care, accelerate research and forecast operational
+              needs.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/manufacturing-service.png"
+              alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Manufacturing</h2>
+            <p class="leading-relaxed text-base">Optimize patient care, accelerate research and forecast operational
+              needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto">
+      <div class="flex flex-col  w-full mb-20">
+        <h1 class="text-5xl font-medium title-font mb-4 text-gray-900  ">About Us</h1>
+        <p class="lg:w-2/3 text-2xl  mb-2 leading-relaxed text-justify">At Neuralogix, we re on a mission to
+          revolutionize the way businesses use artificial intelligence. Our team of experienced technology professionals
+          and cutting-edge AI researchers are dedicated to developing innovative solutions that deliver practical,
+          real-world results.</p>
+        <p class="lg:w-2/3 text-2xl mb-2  leading-relaxed text-justify">We re committed to helping our clients
+          streamline processes, enhance decision-making, and unlock new opportunities for growth.</p>
+        <div class="mt-5   ">
+
+          <a href="#"
+            class="inline-flex  text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary-soft shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Read
+            more <span aria-hidden="true"> → </span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="body-font">
+    <div class="container px-4 py-8 mx-auto">
+      <div class="flex flex-wrap">
+
+        <!-- LEFT COLUMN -->
+        <div class="w-full md:w-1/2 flex flex-wrap">
+
+          <div class="w-full mb-4">
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium">
+              Stay ahead of the AI curve
+            </h3>
+          </div>
+
+          <div class="w-full">
+            <div class="bg-gray-900 text-white rounded-lg">
+              <div class="flex flex-col md:flex-row items-center gap-6 p-6 md:p-6">
+                <h2 class="text-2xl md:text-4xl">
+                  A CEO's Guide<br>
+                  to Generative AI
+                </h2>
+                <img src="assets/img/aceoguid.png" class="w-40 h-40 md:w-60 md:h-60 object-cover" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="w-full md:w-1/2 flex flex-wrap mt-6 md:mt-0">
+
+          <!-- FULL WIDTH CARD -->
+          <div class="w-full  p-2">
+            <div class="bg-gray-900 text-white rounded-lg p-6">
+              <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg> </div>
+              <h1 class="text-base md:text-lg font-medium">
+                10 Generative AI Business Myths that will make <br /> you rethink everything
+              </h1>
+            </div>
+          </div>
+
+          <!-- HALF WIDTH CARDS -->
+          <div class="w-full sm:w-1/2 p-2">
+            <div class="bg-gray-900 text-white rounded-lg p-6 h-full">
+              <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg> </div>
+              <h1 class="text-base font-medium">
+                Generative AI vs Traditional Machine Learning
+              </h1>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-1/2 p-2">
+            <div class="bg-gray-900 text-white rounded-lg p-6 h-full">
+              <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg> </div>
+              <h1 class="text-base font-medium">
+                How to Implement Generative AI in your Enterprise
+              </h1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="text-gray-600 body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0   md:text-left">
+        <a href="#"  class="flex title-font font-medium items-center md:justify-start justify-start text-gray-900">
+           <img src="assets/img/logo.jpg" alt="" srcset="" class="w-8 h-8">
+          <span class="ml-3 text-xl">Neuralogix</span>
+        </a>
+        <div class="my-10">
+          <span class="inline-flex sm:ml-auto sm:mt-0  justify-center sm:justify-start">
+            <a href="#" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a href="#" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left  ">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Solutions</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">AI Chatbots
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Enterprise AI Copilots</a>
+            </li>
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Industries</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Finance</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Retail</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Healthcare</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Manufacturing</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Company</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Insights</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-800">Contact </a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2026 Neuralogix —
+          <a href="https://neuralogix.com" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@neuralogix</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>
