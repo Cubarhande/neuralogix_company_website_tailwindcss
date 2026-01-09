@@ -12,7 +12,4 @@ Clean and modern UI components (hero section, services,  footer)
 
 Easy customization and scalability
 
-#Demo
 
-A live demo will be available at:
-[(https://neuralogix.ai/)](https://neuralogix.ai/)
